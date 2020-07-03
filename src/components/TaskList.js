@@ -29,12 +29,12 @@ const TaskList = props => {
     return (
         <>
             <div className="active-tasks">
-                <h1>Zadania do zrobienia</h1>
+                <h2>Zadania do zrobienia</h2>
                 {activeTasks}
             </div> 
             <hr />
             <div className="done-tasks">
-                <h3>Zadania do zrobione <em>({done.length})</em></h3>
+                <h3>Zadania zrobione <em>({done.length})</em></h3>
                 {doneTasks}
             </div>
         </>

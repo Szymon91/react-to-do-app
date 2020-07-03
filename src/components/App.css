@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 16px;
+  padding-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.addTaskContainer {
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTaskContainer > input{
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  margin-top: 15px;
+}
+
+.formGroup + button {
+  margin-top: 10px;
+  min-width: 70px;
+}
+
+button {
+  background: #fff;
+  border-radius: 2px;
+  border: 2px solid rgb(53, 146, 53);
+  padding: 5px;
+  min-width: 30px;
+}
+
+button:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(53, 146, 53);
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+hr {
+  width: 100%;
+}
+
+.delete {
+  border-color: rgb(160, 15, 15);
+  color: rgb(160, 15, 15);
+  margin-left: 5px;
+}
+
+.delete:hover {
+  background-color: rgb(160, 15, 15);
 }

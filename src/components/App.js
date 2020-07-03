@@ -9,7 +9,7 @@ class App extends Component {
     tasks: [
       {
         id: 0,
-        text: 'Treść zadania',
+        text: 'Dodaj pierwsze zadanie',
         date: '2021',
         important: false,
         active: true,

@@ -44,29 +44,34 @@ class AddTask extends Component {
         let maxDate = parseInt(this.minDate.slice(0,4)) + 1;
         maxDate = maxDate+"-12-31"
         return (
-            <div>
+            <div className="addTaskContainer">
                 <input
                     type="text"
-                    placeholder="dodaj zadanie"
+                    placeholder="Treść zadania"
                     value={this.state.text}
                     onChange={this.handleText}
                 />
-                <label htmlFor="important">Priorytet</label>
-                <input 
-                    type="checkbox"
-                    checked={this.state.checked}
-                    id="important"
-                    onChange={this.handleChecked}
-                />
-                <label htmlFor="date">Do kiedy zrobić</label>
-                <input 
-                    type="date"
-                    value={this.state.date}
-                    min={this.minDate}
-                    max={maxDate}
-                    id="date"
-                    onChange={this.handleDate}
-                />
+                <div className="formGroup">
+                    <label htmlFor="important">Priorytet</label>
+                    <input 
+                        type="checkbox"
+                        checked={this.state.checked}
+                        id="important"
+                        onChange={this.handleChecked}
+                    />
+                </div>
+                <div className="formGroup">
+                    <label htmlFor="date">Termin wykonania</label>
+                    <input 
+                        type="date"
+                        value={this.state.date}
+                        min={this.minDate}
+                        max={maxDate}
+                        id="date"
+                        onChange={this.handleDate}
+                    />
+                </div>
+                
                 <button onClick={this.handleClick}>Dodaj</button>
             </div>
           );
